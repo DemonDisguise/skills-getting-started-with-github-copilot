@@ -63,6 +63,7 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  border-left: 4px solid #1a237e;
 }
 
 .activity-card h4 {
@@ -72,6 +73,89 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 14px;
+  padding: 12px 12px 10px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #eef3ff 0%, #f8fbff 100%);
+  border: 1px solid #d7e2ff;
+}
+
+.participants-title {
+  margin-bottom: 8px;
+  color: #1a237e;
+  letter-spacing: 0.02em;
+}
+
+.participants-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid #d8e1ff;
+}
+
+.participant-email {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #31415a;
+}
+
+.participant-remove {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 999px;
+  background: #dbe3ff;
+  color: #1a237e;
+  font-size: 20px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.participant-remove:hover {
+  background: #1a237e;
+  color: #fff;
+  transform: scale(1.06);
+}
+
+.participant-remove:focus-visible {
+  outline: 3px solid rgba(26, 35, 126, 0.3);
+  outline-offset: 2px;
+}
+
+.participants-list li::marker {
+  content: "";
+}
+
+.participants-list li {
+  margin-bottom: 8px;
+}
+
+.participants-empty {
+  margin-bottom: 0;
+  color: #5f6b7a;
+  font-style: italic;
 }
 
 .form-group {
